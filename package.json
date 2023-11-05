@@ -1,0 +1,32 @@
+{
+  "name": "@dhalcojor/todo-ui-library",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006 --no-open",
+    "build-storybook": "storybook build",
+    "tw:watch": "pnpm exec tailwindcss -i ./src/style.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.5.2",
+    "@storybook/addon-interactions": "^7.5.2",
+    "@storybook/addon-links": "^7.5.2",
+    "@storybook/blocks": "^7.5.2",
+    "@storybook/html": "^7.5.2",
+    "@storybook/html-vite": "^7.5.2",
+    "@storybook/testing-library": "^0.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.5.2",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
